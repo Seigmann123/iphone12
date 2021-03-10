@@ -9,13 +9,14 @@
 }
 */
 
-function screen() {
-    var e = document.getElementById("screen");
-    e.classList.toggle("white-screen")
+function activateScreem(){
+    document.getElementById("screen-on").style.display = "block";
+    document.getElementById("screen").style.display = "none";
 }
 
-function offbutton() {
-    var r = document.getElementsByClassName('off-on-button');
-    r.classList.toggle("white-screen")
+function showPasscode(){
+    document.getElementById("password-screen").style.display = "block";
+    document.getElementById("sircle").style.display = "block";
 }
+
 

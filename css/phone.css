@@ -26,7 +26,9 @@ body{
 
 }
 
-
+#screen-on, #password-screen ,#sircle{
+  display: none;
+}
 
 #screen{
     position: absolute;
@@ -38,23 +40,53 @@ body{
     right: 0;
     left: 0;
     top: 10;
-
+    
 }
+
 
 #screen-on{
     position: absolute;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     border-radius: 30px;
     height: 540px;
     width: 275px;
     margin: 0 auto;
     right: 0;
     left: 0;
-    top: 10; 
+    top: 10;
+    
+}
+    
+
+#sircle{
+    width: 65px;
+    font-size: 45px;
+    line-height: 1.4;
+    height: 65px;
+    background: #494545;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    left: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    top: 50;
+    border-radius: 50%;
+    color: #dcdcdc;
 }
 
-.white-screen{
-  background:white !important;
+
+#password-screen {
+    position: absolute;
+    height: 540px;
+    width: 275px;
+    background-color: rgb(29, 27, 27);
+    right: 0;
+    left: 0;
+    top: 10;
+    margin: 0 auto;
+    opacity: 0.5;
+    border-radius: 30px;
 }
 
 .off-on-button{
@@ -94,3 +126,4 @@ body{
     border-radius: 20px;
     left: -295;
 }
+

@@ -26,9 +26,12 @@ body{
 
 }
 
-#screen-on, #password-screen ,#sircle{
+#screen-on, #password-screen ,#passcode-number-1, #passcode-number-2, #passcode-number-3, #passcode-number-4, #passcode-number-5, #passcode-number-6, #passcode-number-7, #passcode-number-8, #passcode-number-9, #passcode-number-0, #white-bar{
   display: none;
 }
+
+
+
 
 #screen{
     position: absolute;
@@ -58,22 +61,7 @@ body{
 }
     
 
-#sircle{
-    width: 65px;
-    font-size: 45px;
-    line-height: 1.4;
-    height: 65px;
-    background: #494545;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    left: 0;
-    margin: 0 auto;
-    bottom: 0px;
-    top: 50;
-    border-radius: 50%;
-    color: #dcdcdc;
-}
+
 
 
 #password-screen {
@@ -127,3 +115,182 @@ body{
     left: -295;
 }
 
+/* .passcode-numbers{
+    width: 50px;
+    font-size: 40px;
+    line-height: 1.4;
+    height: 50px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+} */
+
+
+#passcode-number-1{
+    width: 47px;
+    font-size: 30px;
+    line-height: 1.4;
+    height: 47px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+    top: 210;
+    left: 50;
+}
+
+
+#passcode-number-2{
+    width: 47px;
+    font-size: 30px;
+    line-height: 1.4;
+    height: 47px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+    top: 210;
+    left: 0;
+    right: 0;
+}
+
+#passcode-number-3{
+    width: 47px;
+    font-size: 30px;
+    line-height: 1.4;
+    height: 47px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+    top: 210;
+    right: 50;
+}
+
+
+#passcode-number-4{
+    width: 47px;
+    font-size: 30px;
+    line-height: 1.4;
+    height: 47px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+    top: 265;
+    left: 50;
+}
+
+#passcode-number-5{
+    width: 47px;
+    font-size: 30px;
+    line-height: 1.4;
+    height: 47px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+    top: 265;
+    left: 0;
+    right: 0;
+}
+
+#passcode-number-6{
+    width: 47px;
+    font-size: 30px;
+    line-height: 1.4;
+    height: 47px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+    top: 265;
+    right: 50;
+}
+
+#passcode-number-7{
+    width: 47px;
+    font-size: 30px;
+    line-height: 1.4;
+    height: 47px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+    top: 325;
+    left: 50;
+}
+
+#passcode-number-8{
+    width: 47px;
+    font-size: 30px;
+    line-height: 1.4;
+    height: 47px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+    top: 325;
+    left: 0;
+    right: 0;
+}
+
+#passcode-number-9{
+    width: 47px;
+    font-size: 30px;
+    line-height: 1.4;
+    height: 47px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+    top: 325;
+    right: 50;
+}
+
+#passcode-number-0{
+    width: 47px;
+    font-size: 30px;
+    line-height: 1.4;
+    height: 47px;
+    background: #494545;
+    position: absolute; 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #dcdcdc;
+    top: 380;
+    left: 0;
+    right: 0;
+}
+
+#white-bar{
+    height: 5px;
+    width: 150;
+    background: white;
+    position: absolute;
+    bottom: 20;
+    border-radius: 30px;
+    left: 72.5;
+}

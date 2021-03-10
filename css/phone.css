@@ -30,7 +30,7 @@ body{
 
 #screen{
     position: absolute;
-    background: #000;
+    background: rgb(0, 0, 0);
     border-radius: 30px;
     height: 540px;
     width: 275px;
@@ -39,6 +39,22 @@ body{
     left: 0;
     top: 10;
 
+}
+
+#screen-on{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    height: 540px;
+    width: 275px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    top: 10; 
+}
+
+.white-screen{
+  background:white !important;
 }
 
 .off-on-button{

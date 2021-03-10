@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone{
+    position: relative;
+    background: rgb(32, 32, 32);
+    border-radius: 30px;
+    height: 560px;
+    width: 295px;
+    margin: 0 auto;
+}
+
+.sensores{
+    position: absolute;
+    background: rgb(32, 32, 32);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height:32;
+    width: 175;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+
+}
+
+
+
+#screen{
+    position: absolute;
+    background: #000;
+    border-radius: 30px;
+    height: 540px;
+    width: 275px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    top: 10;
+
+}
+
+.off-on-button{
+    width: 3px;
+    height: 60px;
+    background: rgb(32, 32, 32);
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    top: 125;
+    border-radius: 20px;
+    left: 294;
+}
+
+
+.sound-up{
+    width: 3px;
+    height: 35px;
+    background: rgb(32, 32, 32);
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    top: 115;
+    border-radius: 20px;
+    left: -295;
+}
+
+
+.sound-down{
+    width: 3px;
+    height: 35px;
+    background: rgb(32, 32, 32);
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    top: 160;
+    border-radius: 20px;
+    left: -295;
+}

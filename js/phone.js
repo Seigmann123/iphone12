@@ -9,7 +9,7 @@
 }
 */
 
-function activateScreem(){
+function activateScreen(){
     document.getElementById("screen-on").style.display = "block";
     document.getElementById("screen").style.display = "none";
 }
@@ -17,6 +17,11 @@ function activateScreem(){
 function showPasscode(){
     document.getElementById("password-screen").style.display = "block";
     document.getElementById("sircle").style.display = "block";
+}
+
+function turnOn(){
+    document.getElementById("screen-on").style.display = "block";
+    document.getElementById("screen").style.display = "none";
 }
 
 

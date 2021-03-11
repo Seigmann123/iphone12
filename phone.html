@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,38 @@
     <script src="js/phone.js"></script>
     <title>phone</title>
 </head>
+
 <body>
 
-   
-  
+
+
     <div class="phone">
 
-        <div id="screen" onClick="activateScreen()"></div>
-        <div class="off-on-button" onclick="activateScreen()"></div>
-        <div id="screen-on"></div>        
+        <div id="screen" onClick="activateScreenClock()"></div>
+        <div class="off-on-button"></div>
+        <div id="screen-on"></div>
+        <div id="clock"></div>
+        <div id="miniclock"></div>
+        <div id="login"></div>
         <div id="password-screen"></div>
-        <div class="sensores"></div>  
-        
-<div id="white-bar" onclick="showPasscode()"></div>
-        
-    <div  id="passcode-number-1">1</div>
-    <div  id="passcode-number-2">2</div>
-    <div  id="passcode-number-3">3</div>
-    <div  id="passcode-number-4">4</div>
-    <div  id="passcode-number-5">5</div>
-    <div  id="passcode-number-6">6</div>
-    <div  id="passcode-number-7">7</div>
-    <div  id="passcode-number-8">8</div>
-    <div  id="passcode-number-9">9</div>
-    <div  id="passcode-number-0">0</div>
-
+        <div class="sensores"></div>
+        <div id="miniclock"></div>
+        <div id="passcode-number-1" onclick="logIn()">1</div>
+        <div id="passcode-number-2" onclick="logIn()">2</div>
+        <div id="passcode-number-3" onclick="logIn()">3</div>
+        <div id="passcode-number-4" onclick="logIn()">4</div>
+        <div id="passcode-number-5" onclick="logIn()">5</div>
+        <div id="passcode-number-6" onclick="logIn()">6</div>
+        <div id="passcode-number-7" onclick="logIn()">7</div>
+        <div id="passcode-number-8" onclick="logIn()">8</div>
+        <div id="passcode-number-9" onclick="logIn()">9</div>
+        <div id="passcode-number-0" onclick="logIn()">0</div>
+        <div id="white-bar" onclick="showPasscode()"></div>
         <div class="sound-up"></div>
         <div class="sound-down"></div>
-        </div>
+    </div>
+
 
 </body>
+
 </html>

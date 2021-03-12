@@ -40,7 +40,8 @@ body {
 #white-bar,
 #login,
 #clock,
-#miniclock {
+#miniclock,
+#date {
     display: none;
 }
 
@@ -93,7 +94,7 @@ body {
     background-image: url(http://www.simpleimageresizer.com/_uploads/photos/ffaec3ba/271091_275x540.jpg);
 }
 
-.off-on-button {
+#off-on-button {
     width: 3px;
     height: 60px;
     background: rgb(32, 32, 32);
@@ -316,6 +317,18 @@ body {
     left: 0;
     right: 0;
     top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#date {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 0 40px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
     font-family: 'Times New Roman', Times, serif;
 }
 

@@ -66,7 +66,9 @@ body {
     right: 0;
     left: 0;
     top: 10;
-    background-image: url(http://www.simpleimageresizer.com/_uploads/photos/ffaec3ba/pexels-photo-2486168_275x540.jpeg);
+    background-image: url(/img/pexels-photo-2486168.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #password-screen {
@@ -91,7 +93,9 @@ body {
     top: 10;
     margin: 0 auto;
     border-radius: 30px;
-    background-image: url(http://www.simpleimageresizer.com/_uploads/photos/ffaec3ba/271091_275x540.jpg);
+    background-image: url(/img/271091.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #off-on-button {

@@ -5,13 +5,13 @@
 //     }
 // }
 
-// function activateScreen() {
-//     var o = document.getElementById("screen-on");
-//     if (o === document.getElementById("screen-on")) {
-//         document.getElementById("screen").style.display = "block"
-//     }
+function activateScreen() {
+    var o = document.getElementById("scree");
+    if (o === document.getElementById("screen")) {
+        document.getElementById("screen-on").style.display = "block"
+    }
 
-// }
+}
 
 function turnOn() {
     document.getElementById("screen-on").style.display = "block";
@@ -52,21 +52,21 @@ function activateScreenClock() {
     var time = h + ":" + m + " ";
 
 
-    const d = new Date();
+    var d = new Date();
     var options = {
         weekday: 'long',
         month: 'long',
         day: 'numeric'
     };
 
-    
-    
-    // console.log(date.toLocaleDateString("default", options));
-    
-    
-    
-    document.getElementById("date").innerText = options;
-    document.getElementById("date").textContent = options;
+    var date2 = date.toLocaleDateString("default", options);
+
+
+
+
+
+    document.getElementById("date").innerText = date2;
+    document.getElementById("date").textContent = date2;
     document.getElementById("clock").innerText = time;
     document.getElementById("clock").textContent = time;
     document.getElementById("screen-on").style.display = "block";
@@ -93,23 +93,23 @@ function showPasscode() {
 }
 
 function logIn() {
-    var date = new Date();
-    var h = date.getHours();
-    var m = date.getMinutes();
+    // var date = new Date();
+    // var h = date.getHours();
+    // var m = date.getMinutes();
 
 
-    if (h > 24) {
-        h = h - 24;
+    // if (h > 24) {
+    //     h = h - 24;
 
-    }
+    // }
 
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
+    // h = (h < 10) ? "0" + h : h;
+    // m = (m < 10) ? "0" + m : m;
 
 
-    var time = h + ":" + m + " ";
-    // document.getElementById("miniClock").innerText = time;
-    //document.getElementById("miniClock").textContent = time;
+    // var time2 = h + ":" + m;
+    // document.getElementById("miniClock").innerText = time2;
+    // document.getElementById("miniClock").textContent = time2;
     document.getElementById("login").style.display = "block";
     document.getElementById("password-screen").style.display = "none";
     document.getElementById("passcode-number-1").style.display = "none";

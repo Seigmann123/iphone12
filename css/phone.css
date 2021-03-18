@@ -41,7 +41,13 @@ body {
 #login,
 #clock,
 #miniclock,
-#date {
+#date,
+#app1,
+#app2,
+#app3,
+#app4,
+.calculator,
+#white-bar2 {
     display: none;
 }
 
@@ -69,6 +75,18 @@ body {
     background-image: url(/img/pexels-photo-2486168.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.calculator {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    border-radius: 30px;
+    height: 540px;
+    width: 275px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    top: 10;
 }
 
 #password-screen {
@@ -312,6 +330,17 @@ body {
     left: 72.5;
 }
 
+
+#white-bar2 {
+    height: 5px;
+    width: 150;
+    background: white;
+    position: absolute;
+    bottom: 20;
+    border-radius: 30px;
+    left: 72.5;
+}
+
 #clock {
     color: #ffffff;
     font-size: 50px;
@@ -346,4 +375,48 @@ body {
     right: 0;
     top: 40px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+#app1{
+    height: 50;
+    width: 50;
+    position: absolute;
+    border-radius: 15px ;
+    top: 60;
+    left: 30;
+    background-image: url(/img/calculator.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#app2{
+    height: 50;
+    width: 50;
+    position: absolute;
+    background: white;
+    border-radius: 15px ;
+    top: 60;
+    left: 92;
+    background-image: url(/img/1F40D-snake-512.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#app3{
+    height: 50;
+    width: 50;
+    position: absolute;
+    background: black;
+    border-radius: 15px ;
+    top: 60;
+    right: 92;
+}
+
+#app4{
+    height: 50;
+    width: 50;
+    position: absolute;
+    background: black;
+    border-radius: 15px ;
+    top: 60;
+    right: 30;
 }

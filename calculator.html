@@ -1,0 +1,324 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="input" id="input"></div>
+        <div class="buttons"></div>
+        <div class="operators">
+            <div class="pluss">+</div>
+            <div class="minus">-</div>
+            <div class="multiply">&times;</div>
+            <div>&divide;</div>
+            <div id="plussminus">+/-</div>
+            <div id="prosent">%</div>
+        </div>
+        <div class="leftPanel">
+            <div class="numbers">
+                <div >7</div>
+                <div>8</div>
+                <div>9</div>
+            </div>
+            <div class="numbers">
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+            <div class="numbers">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <div class="numbers">
+                <div id="null">0</div>
+                <div class="dot">.</div>
+                <div id="clear">C</div>
+               
+            </div>
+        </div>
+        <div class="equal" id="result">=</div>
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    .calculator {
+        margin: 4% auto;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 5px;
+        font-size: 1.8rem;
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .input {
+        border-radius: 1px;
+        height: 60px;
+        padding-right: 15px;
+        padding-top: 10px;
+        text-align: right;
+        margin-right: 6px;
+        font-size: 2.5rem;
+        overflow-x: auto;
+        transition: all .2s ease-in-out;
+        width: 230;
+        color: white;
+    }
+
+   .pluss{
+       position: relative;
+       top: 201;
+       left: 192;
+   }    
+
+   .minus{
+       position: relative;
+       top: 134;
+       left: 128;
+   }
+
+   .multiply{
+       position: relative;
+       top: 67;
+       left: 64;
+   }
+
+   .dot{
+       position: relative;
+
+   }
+
+   #null{
+       height: 47px;
+       width: 111px;
+       border-radius: 50px;
+       text-align: inherit;
+   }
+
+   #plussminus{
+       position: relative; 
+       left: -192;
+       background-color: rgb(138, 138, 138);
+   }
+
+   #prosent{
+       position: relative;
+       left: -192;
+       background-color: rgb(138, 138, 138);
+       }
+
+    .operators div {
+        display: inline-block;
+        border-radius: 100%;
+        width: 47px;
+        height: 47px;
+        text-align: center;
+        margin: 10px 4px 10px 0;
+        cursor: pointer;
+        background-color: #ff8800;
+        line-height: 1.6;
+       color: white;
+    }
+
+
+
+    .operators div:hover {
+        filter: brightness(120%);
+
+         
+    }
+
+    .operators div:active {
+        display: inline-block;
+    }
+
+    .numbers div {
+        display: inline-block;
+        border-radius: 100%;
+        width: 47px;
+        height: 47px;
+        text-align: center;
+        margin: 10px 4px 10px 0;
+        cursor: pointer;
+        background-color: #464343;
+        line-height: 1.6;
+        color: white;
+     
+
+    }
+
+
+    .numbers div:hover {
+        background-color: #797979;
+    }
+
+    .numbers div:active {
+        font-weight: bold;
+    }
+
+    div.equal {
+        position: relative;
+        top:  -67;
+        left: 192;
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 10px 6px 10px 0;
+        vertical-align: top;
+        cursor: pointer;
+        color: #fff;
+        background-color: #ff8800;
+        transition: all .2s ease-in-out;
+        line-height: 1.6;
+    }
+
+    div.equal:hover {
+        filter: brightness(120%);
+
+    }
+
+    div.equal:active {
+        font-weight: bold;
+    }
+
+
+    #clear{
+        position: relative;
+        top: -268;
+        left: -192;
+        background-color: rgb(138, 138, 138);
+    }
+
+
+</style>
+
+
+
+<script>
+
+    "use strict";
+
+    var input = document.getElementById("input"),
+        number = document.querySelectorAll(".numbers div"),
+        operator = document.querySelectorAll(".operators div"),
+        result = document.getElementById("result"),
+        clear = document.getElementById("clear"),
+        resultDisplayed = false;
+
+    for (var i = 0; i < number.length; i++) {
+        number[i].addEventListener("click", function (e) {
+            var currentString = input.innerHTML;
+            var lastChar = currentString[currentString.length - 1];
+
+            if (resultDisplayed === false) {
+                input.innerHTML += e.target.innerHTML;
+            } else if (
+                (resultDisplayed === true && lastChar === "+") ||
+                lastChar === "-" ||
+                lastChar === "×" ||
+                lastChar === "÷"
+            ) {
+                resultDisplayed = false;
+                input.innerHTML += e.target.innerHTML;
+            } else {
+                resultDisplayed = false;
+                input.innerHTML = "";
+                input.innerHTML += e.target.innerHTML;
+            }
+        });
+    }
+
+    for (var i = 0; i < operator.length; i++) {
+        operator[i].addEventListener("click", function (e) {
+            var currentString = input.innerHTML;
+            var lastChar = currentString[currentString.length - 1];
+
+            if (
+                lastChar === "+" ||
+                lastChar === "-" ||
+                lastChar === "×" ||
+                lastChar === "÷"
+            ) {
+                var newString =
+                    currentString.substring(0, currentString.length - 1) +
+                    e.target.innerHTML;
+                input.innerHTML = newString;
+            } else if (currentString.length == 0) {
+                console.log("enter a number first");
+            } else {
+                input.innerHTML += e.target.innerHTML;
+            }
+        });
+    }
+
+    result.addEventListener("click", function () {
+        var inputString = input.innerHTML;
+
+        var numbers = inputString.split(/\+|\-|\×|\÷/g);
+
+
+        var operators = inputString.replace(/[0-9]|\./g, "").split("");
+
+        console.log(inputString);
+        console.log(operators);
+        console.log(numbers);
+        console.log("----------------------------");
+
+
+
+        var divide = operators.indexOf("÷");
+        while (divide != -1) {
+            numbers.splice(divide, 2, numbers[divide] / numbers[divide + 1]);
+            operators.splice(divide, 1);
+            divide = operators.indexOf("÷");
+        }
+
+        var multiply = operators.indexOf("×");
+        while (multiply != -1) {
+            numbers.splice(multiply, 2, numbers[multiply] * numbers[multiply + 1]);
+            operators.splice(multiply, 1);
+            multiply = operators.indexOf("×");
+        }
+
+        var subtract = operators.indexOf("-");
+        while (subtract != -1) {
+            numbers.splice(subtract, 2, numbers[subtract] - numbers[subtract + 1]);
+            operators.splice(subtract, 1);
+            subtract = operators.indexOf("-");
+        }
+
+        var add = operators.indexOf("+");
+        while (add != -1) {
+
+            numbers.splice(
+                add,
+                2,
+                parseFloat(numbers[add]) + parseFloat(numbers[add + 1])
+            );
+            operators.splice(add, 1);
+            add = operators.indexOf("+");
+        }
+
+        input.innerHTML = numbers[0];
+
+        resultDisplayed = true;
+    });
+
+
+    clear.addEventListener("click", function () {
+        input.innerHTML = "";
+    });
+
+
+
+</script>

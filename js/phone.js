@@ -113,7 +113,8 @@ function logIn() {
     document.getElementById("app4").style.display = "block";
     document.getElementById("white-bar").style.display = "none";
     document.getElementById("white-bar2").style.display = "none";
-    document.getElementById("calculator").style.display = "none";
+
+    
 }
 
 
@@ -127,7 +128,8 @@ document.getElementById("app3").style.display = "none";
 document.getElementById("app4").style.display = "none";
 document.getElementById("login").style.display = "none";
 document.getElementById("white-bar2").style.display = "block";
-document.getElementsByClassName("calculator").style.display = "block"
+
+document.getElementsByClassName("calculator")[0].style.display = "block"
 document.getElementsByClassName("input").style.display = "block"
 document.getElementsByClassName("pluss").style.display = "block"
 document.getElementsByClassName("minus").style.display = "block"
@@ -136,11 +138,10 @@ document.getElementsByClassName("dot").style.display = "block"
 document.getElementById("null").style.display = "block"
 document.getElementById("plussminus").style.display = "block"
 document.getElementById("prosent").style.display = "block"
-document.getElementsByClassName("operators div").style.display = "block"
-document.getElementsByClassName("numbers div").style.display = "block"
+document.getElementsByClassName("operators").style.display = "block"
+document.getElementsByClassName("numbers").style.display = "block"
 document.getElementsByClassName("equal").style.display = "block"
 document.getElementById("clear").style.display = "block"
-
 
 
 

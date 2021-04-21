@@ -22,7 +22,7 @@
         </div>
         <div class="leftPanel">
             <div class="numbers">
-                <div >7</div>
+                <div>7</div>
                 <div>8</div>
                 <div>9</div>
             </div>
@@ -40,7 +40,7 @@
                 <div id="null">0</div>
                 <div class="dot">.</div>
                 <div id="clear">C</div>
-               
+
             </div>
         </div>
         <div class="equal" id="result">=</div>
@@ -59,7 +59,7 @@
         padding: 20px;
         background-color: rgb(0, 0, 0);
     }
-
+    
     .input {
         border-radius: 1px;
         height: 60px;
@@ -73,49 +73,48 @@
         width: 230;
         color: white;
     }
-
-   .pluss{
-       position: relative;
-       top: 201;
-       left: 192;
-   }    
-
-   .minus{
-       position: relative;
-       top: 134;
-       left: 128;
-   }
-
-   .multiply{
-       position: relative;
-       top: 67;
-       left: 64;
-   }
-
-   .dot{
-       position: relative;
-
-   }
-
-   #null{
-       height: 47px;
-       width: 111px;
-       border-radius: 50px;
-       text-align: inherit;
-   }
-
-   #plussminus{
-       position: relative; 
-       left: -192;
-       background-color: rgb(138, 138, 138);
-   }
-
-   #prosent{
-       position: relative;
-       left: -192;
-       background-color: rgb(138, 138, 138);
-       }
-
+    
+    .pluss {
+        position: relative;
+        top: 201;
+        left: 192;
+    }
+    
+    .minus {
+        position: relative;
+        top: 134;
+        left: 128;
+    }
+    
+    .multiply {
+        position: relative;
+        top: 67;
+        left: 64;
+    }
+    
+    .dot {
+        position: relative;
+    }
+    
+    #null {
+        height: 47px;
+        width: 111px;
+        border-radius: 50px;
+        text-align: inherit;
+    }
+    
+    #plussminus {
+        position: relative;
+        left: -192;
+        background-color: rgb(138, 138, 138);
+    }
+    
+    #prosent {
+        position: relative;
+        left: -192;
+        background-color: rgb(138, 138, 138);
+    }
+    
     .operators div {
         display: inline-block;
         border-radius: 100%;
@@ -126,21 +125,17 @@
         cursor: pointer;
         background-color: #ff8800;
         line-height: 1.6;
-       color: white;
+        color: white;
     }
-
-
-
+    
     .operators div:hover {
         filter: brightness(120%);
-
-         
     }
-
+    
     .operators div:active {
         display: inline-block;
     }
-
+    
     .numbers div {
         display: inline-block;
         border-radius: 100%;
@@ -152,22 +147,19 @@
         background-color: #464343;
         line-height: 1.6;
         color: white;
-     
-
     }
-
-
+    
     .numbers div:hover {
         background-color: #797979;
     }
-
+    
     .numbers div:active {
         font-weight: bold;
     }
-
+    
     div.equal {
         position: relative;
-        top:  -67;
+        top: -67;
         left: 192;
         width: 47px;
         height: 47px;
@@ -181,31 +173,26 @@
         transition: all .2s ease-in-out;
         line-height: 1.6;
     }
-
+    
     div.equal:hover {
         filter: brightness(120%);
-
     }
-
+    
     div.equal:active {
         font-weight: bold;
     }
-
-
-    #clear{
+    
+    #clear {
         position: relative;
         top: -268;
         left: -192;
         background-color: rgb(138, 138, 138);
     }
-
-
 </style>
 
 
 
 <script>
-
     "use strict";
 
     var input = document.getElementById("input"),
@@ -216,7 +203,7 @@
         resultDisplayed = false;
 
     for (var i = 0; i < number.length; i++) {
-        number[i].addEventListener("click", function (e) {
+        number[i].addEventListener("click", function(e) {
             var currentString = input.innerHTML;
             var lastChar = currentString[currentString.length - 1];
 
@@ -239,7 +226,7 @@
     }
 
     for (var i = 0; i < operator.length; i++) {
-        operator[i].addEventListener("click", function (e) {
+        operator[i].addEventListener("click", function(e) {
             var currentString = input.innerHTML;
             var lastChar = currentString[currentString.length - 1];
 
@@ -261,7 +248,7 @@
         });
     }
 
-    result.addEventListener("click", function () {
+    result.addEventListener("click", function() {
         var inputString = input.innerHTML;
 
         var numbers = inputString.split(/\+|\-|\×|\÷/g);
@@ -315,10 +302,7 @@
     });
 
 
-    clear.addEventListener("click", function () {
+    clear.addEventListener("click", function() {
         input.innerHTML = "";
     });
-
-
-
 </script>
